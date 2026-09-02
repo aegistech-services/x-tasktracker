@@ -1,0 +1,128 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --dot-color: #E5E7EB;
+    --bg-canvas: #F9F9F7;
+    --text-primary: #2D2D2D;
+  }
+
+  body {
+    background-color: var(--bg-canvas);
+    background-image: radial-gradient(var(--dot-color) 1.2px, transparent 1.2px);
+    background-size: 24px 24px;
+    background-position: 0 0;
+    min-height: 100vh;
+    color: var(--text-primary);
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+}
+
+/* Handwritten font for sticky note accents */
+.font-handwriting {
+  font-family: 'Caveat', cursive, sans-serif;
+}
+
+/* Dot grid canvas utility */
+.bg-dotted-canvas {
+  background-color: #F9F9F7;
+  background-image: radial-gradient(#E5E7EB 1.2px, transparent 1.2px);
+  background-size: 24px 24px;
+}
+
+/* Clean Minimalism Post-It Card Color Schemes with crisp left-border and light drop shadow */
+.postit-yellow {
+  background-color: #FEF9C3;
+  border-left: 4px solid #FACC15;
+  border-top: 1px solid rgba(234, 179, 8, 0.2);
+  border-right: 1px solid rgba(234, 179, 8, 0.2);
+  border-bottom: 1px solid rgba(234, 179, 8, 0.25);
+  color: #713F12;
+  box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.04);
+}
+
+.postit-blue {
+  background-color: #DBEAFE;
+  border-left: 4px solid #60A5FA;
+  border-top: 1px solid rgba(96, 165, 250, 0.2);
+  border-right: 1px solid rgba(96, 165, 250, 0.2);
+  border-bottom: 1px solid rgba(96, 165, 250, 0.25);
+  color: #1E3A8A;
+  box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.04);
+}
+
+.postit-green {
+  background-color: #DCFCE7;
+  border-left: 4px solid #4ADE80;
+  border-top: 1px solid rgba(74, 222, 128, 0.2);
+  border-right: 1px solid rgba(74, 222, 128, 0.2);
+  border-bottom: 1px solid rgba(74, 222, 128, 0.25);
+  color: #14532D;
+  box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.04);
+}
+
+.postit-pink {
+  background-color: #FCE7F3;
+  border-left: 4px solid #F472B6;
+  border-top: 1px solid rgba(244, 114, 182, 0.2);
+  border-right: 1px solid rgba(244, 114, 182, 0.2);
+  border-bottom: 1px solid rgba(244, 114, 182, 0.25);
+  color: #831843;
+  box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.04);
+}
+
+.postit-purple {
+  background-color: #F3E8FF;
+  border-left: 4px solid #C084FC;
+  border-top: 1px solid rgba(192, 132, 252, 0.2);
+  border-right: 1px solid rgba(192, 132, 252, 0.2);
+  border-bottom: 1px solid rgba(192, 132, 252, 0.25);
+  color: #581C87;
+  box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.04);
+}
+
+.postit-orange {
+  background-color: #FFEDD5;
+  border-left: 4px solid #FB923C;
+  border-top: 1px solid rgba(251, 146, 60, 0.2);
+  border-right: 1px solid rgba(251, 146, 60, 0.2);
+  border-bottom: 1px solid rgba(251, 146, 60, 0.25);
+  color: #7C2D12;
+  box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.04);
+}
+
+/* Post-It Note Tape Aesthetic */
+.tape-strip {
+  position: absolute;
+  top: -9px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-1deg);
+  width: 64px;
+  height: 18px;
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(2px);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+  pointer-events: none;
+  z-index: 10;
+  border-radius: 2px;
+}
+
+/* Custom minimal scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #E5E7EB;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #D1D5DB;
+}

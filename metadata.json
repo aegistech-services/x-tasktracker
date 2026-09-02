@@ -1,0 +1,6 @@
+{
+  "name": "Nested Kanban Task Tracker",
+  "description": "Hierarchical 4-level task tracker with Kanban boards, drag-and-drop reordering, progress rollups, and post-it note or professional grid view styles.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
